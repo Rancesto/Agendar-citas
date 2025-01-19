@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu Cita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+</head>
+<body>
+  
+    <main>
+        <section class="form-section">
+            <div class="form-container">
+                <h2>Selecciona tu Cita</h2>
+                <form id="agendarCita" novalidate>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span id="nombre-error" class="error-message"></span>
+
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                    <span id="correo-error" class="error-message"></span>
+
+                    <label for="fecha">Fecha y Hora:</label>
+                    <input type="datetime-local" id="fecha" name="fecha" required>
+                    <span id="fecha-error" class="error-message"></span>
+
+                    <label for="servicio">Selecciona el Servicio:</label>
+                    <select id="servicio" name="servicio" required>
+                        <option value="corte_pelo">Corte de Pelo - $6</option>
+                        <option value="pedicure">Pedicure - $10</option>
+                        <option value="manicure">Manicure - $10</option>
+                    </select>
+                    <span id="servicio-error" class="error-message"></span>
+
+                    <button type="submit">Agendar Cita</button>
+                </form>
+
+                <div>
+                    <button onclick="location.href='view-citas.html'">Ver Citas Agendadas</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Barbería Moderno. Todos los derechos reservados.</p>
+    </footer>
+
+    <div id="notificacion" class="hidden">
+        <p id="mensaje-notificacion"></p>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
