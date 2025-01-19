@@ -60,18 +60,18 @@ Al enviar el formulario, recibirás una notificación en la parte superior de la
 Estructura del Proyecto
 
 agendar-citas/
-│
-├── assets/              # Imágenes o recursos estáticos (si los tienes)
-├── css/                 # Archivos de estilo (CSS)
-│   └── style.css
-├── js/                  # Archivos de JavaScript
-│   ├── app.js           # Lógica principal del formulario
-│   ├── auth.js          # Lógica de autenticación (si aplica)
-│   └── citas.js         # Lógica para manejar las citas
-├── index.html           # Página principal con el formulario de citas
-├── view-citas.html      # Página para ver las citas agendadas
-├── confirmacion.html    # Página de confirmación después de agendar una cita
-└── README.md            # Este archivo con la documentación
+
+── assets/              # Imágenes o recursos estáticos (si los tienes)
+── css/                 # Archivos de estilo (CSS)
+    style.css
+── js/                  # Archivos de JavaScript
+    app.js           # Lógica principal del formulario
+    auth.js          # Lógica de autenticación (si aplica)
+    citas.js         # Lógica para manejar las citas
+── index.html           # Página principal con el formulario de citas
+── view-citas.html      # Página para ver las citas agendadas
+── confirmacion.html    # Página de confirmación después de agendar una cita
+── README.md            # Este archivo con la documentación
 
 Tecnologías Utilizadas
 HTML5: Estructura de la página web.
